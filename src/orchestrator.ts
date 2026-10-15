@@ -64,8 +64,6 @@ export class CodeReviewOrchestrator {
           schema: ReviewReportJSONSchema as Record<string, unknown>
         },
         maxTurns: this.options.maxTurns,
-        permissionMode: 'bypassPermissions',
-        allowDangerouslySkipPermissions: true,
         settingSources: ['project'],
         persistSession: false
       }
